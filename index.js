@@ -2,8 +2,14 @@
 
 var randomNumber1 = Math.floor(Math.random()*6 + 1);
 
-var randomImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
+var randomImageLeft = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
-var randomImageSource = "images/" + randomImage; // images/dice1.png
+var randomImageSource = "images/" + randomImageLeft; // images/dice1.png
 
-document.querySelectorAll("img").setAttribute("src", randomImageSource);
+var image1 = document.querySelectorAll("img")[0];
+
+image1.setAttribute("src", randomImageSource);
+
+/* Random Dicee Right */
+
+
